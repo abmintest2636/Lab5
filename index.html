@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>CV - Mykola Lukasevych</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<button onclick="toggleTheme()" class="theme-btn">Змінити тему</button>
+
+<div class="cv-container">
+
+    <h1>Микола Лукасевич</h1>
+
+    <p><strong>Телефон:</strong> +380637267272</p>
+    <p><strong>Email:</strong> Mykola.Lukasevych.KB.2024@lpnu.ua</p>
+    <p><strong>Місто:</strong> Львів, Україна</p>
+    <p><strong>GitHub:</strong> <a href="#">github.com/Mykola-14</a></p>
+
+    <hr>
+
+    <div class="section">
+        <h2>Мета</h2>
+        <p>
+            Студент спеціальності "Кібербезпека", зацікавлений у 
+            розвитку
+            в сфері інформаційної безпеки.
+        </p>
+    </div>
+
+    <div class="section">
+        <h2>Освіта</h2>
+        <p><strong>Львівська політехніка</strong></p>
+        <p>Кібербезпека</p>
+    </div>
+
+    <div class="section">
+        <h2>Коментарі роботодавців</h2>
+        <div id="comments"></div>
+    </div>
+
+</div>
+
+<footer id="footer-info"></footer>
+
+
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <h2>Зворотній зв'язок</h2>
+        <form action="https://formspree.io/f/mlgolkwn" method="POST">
+        
+            <input type="text" name="name" placeholder="Ім’я" required>
+            <input type="email" name="email" placeholder="Email" required>
+            <input type="tel" name="phone" placeholder="Телефон" required>
+            <textarea name="message" placeholder="Ваше повідомлення"></textarea>
+            <button type="submit">Відправити</button>
+        </form>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
